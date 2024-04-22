@@ -27,3 +27,16 @@
   padding: 15rem 0;
   position: relative;
 }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: $gradient3
+}
+
+.book {
+  background-image: url('../img/nat-10.jpg');
+  background-size: cover;
+  height: 50rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($colorBlack, .15);
+}
