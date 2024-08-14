@@ -10,7 +10,7 @@
     position: absolute;
     top: 4rem;
     left: 4rem;
-  
+
     &:hover {
       .logo {
         animation: opacityDown 3s ease-in-out infinite;
@@ -29,5 +29,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+  @include break(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
   }
 }
