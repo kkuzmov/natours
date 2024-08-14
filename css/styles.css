@@ -234,7 +234,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .section-features {
-    padding: 15rem 0;
+    padding: 12rem 0;
   }
 }
 
@@ -556,8 +556,18 @@ body {
   background-clip: text;
   color: transparent;
 }
+@media (max-width: 56.25em) {
+  .feature-box__icon {
+    margin-bottom: 0;
+  }
+}
 .feature-box:hover {
   transform: scale(1.03) translateY(-1.5rem);
+}
+@media (max-width: 56.25em) {
+  .feature-box {
+    padding: 2rem;
+  }
 }
 
 .story {

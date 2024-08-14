@@ -15,11 +15,17 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-  }
 
-  &__text {}
+    @include break(tablet) {
+      margin-bottom: 0;
+    }
+  }
 
   &:hover {
     transform: scale(1.03) translateY(-1.5rem);
+  }
+
+  @include break(tablet) {
+    padding: 2rem;
   }
 }
