@@ -9,6 +9,18 @@ html {
   // font-size: 10px;
   // if using fixed px values user cannot change font-size, so better idea is to use default(16px) / 62.5 = 10px
   font-size: 62.5%;
+
+  @include break(tablet-land) {
+    font-size: 56.25%;
+  }
+
+  @include break(tablet) {
+    font-size: 50%;
+  }
+
+  @include break(large) {
+    font-size: 75%;
+  }
 }
 body {
   box-sizing: border-box;
