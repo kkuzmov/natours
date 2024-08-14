@@ -24,6 +24,12 @@ html {
 }
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include break(tablet) {
+    padding: 0rem;
+  }
+
 }
 
 input {
