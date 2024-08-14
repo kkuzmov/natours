@@ -18,6 +18,11 @@
     border-top: 1px solid $colorWhite2;
     padding-top: 2rem;
     display: inline-block;
+
+    @include break(tablet) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -66,5 +71,15 @@
   &__copyright {
     width: 80%;
     float: right;
+
+    @include break(tablet) {
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
+  }
+
+  @include break(tablet) {
+    padding: 8rem 0;
   }
 }
