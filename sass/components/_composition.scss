@@ -13,16 +13,35 @@
     &--p1 {
       left: 0;
       top: -2rem;
+
+      @include break(tablet) {
+        top: 0;
+        transform: scale(1.1);
+      }
     }
 
     &--p2 {
       right: 0;
-      top: 2rem
+      top: 2rem;
+
+      @include break(tablet) {
+        top: -1rem;
+        transform: scale(1.3);
+        z-index: 100;
+
+      }
     }
 
     &--p3 {
       left: 15%;
-      top: 12rem
+      top: 12rem;
+
+      @include break(tablet) {
+        top: 1rem;
+        left: 0;
+        transform: scale(1.3);
+
+      }
     }
 
     &:hover {
@@ -32,15 +51,24 @@
       outline: 1.5rem solid $mediumGreen;
       border-radius: 0;
     }
+
+    @include break(tablet) {
+      float: left;
+      position: relative;
+      width: 33.3333%;
+      box-shadow: 0 1.5rem 3rem rgba($colorBlack, .2);
+    }
   }
 
   &:hover {
     .composition {
       &__photo {
-        &:not(:hover){
+        &:not(:hover) {
           transform: scale(.95);
         }
       }
     }
   }
+
+  
 }
