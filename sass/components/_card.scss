@@ -3,7 +3,7 @@
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
-  
+
 
   &__side {
     height: 52rem;
@@ -15,7 +15,6 @@
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($colorBlack, .15);
 
     &--front {
       background-color: $colorWhite;
@@ -42,6 +41,7 @@
     &--front {
       transform: rotateY(-180deg);
     }
+
     &--back {
       transform: rotateY(0);
     }
@@ -54,20 +54,20 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    
+
     &--1 {
-      background-image: $gradient1, 
-      url('../img/nat-5.jpg');
+      background-image: $gradient1,
+        url('../img/nat-5.jpg');
     }
 
     &--2 {
       background-image: $gradient2,
-      url('../img/nat-6.jpg');
+        url('../img/nat-6.jpg');
     }
 
     &--3 {
       background-image: $gradient3,
-      url('../img/nat-7.jpg');
+        url('../img/nat-7.jpg');
     }
   }
 
@@ -108,6 +108,7 @@
       list-style: none;
       width: 80%;
       margin: 0 auto;
+
       li {
         text-align: center;
         font-size: 1.5rem;
@@ -133,13 +134,61 @@
     color: $colorWhite;
   }
 
-  &__price-only { 
+  &__price-only {
     font-size: 1.4rem;
     text-transform: uppercase;
   }
 
-  &__price-value { 
+  &__price-value {
     font-size: 6rem;
     font-weight: 100;
+  }
+}
+
+@include break(tablet) {
+  .card {
+    height: auto;
+    border-radius: 3px;
+    background-color: $colorWhite;
+    box-shadow: 0 1.5rem 4rem rgba($colorBlack, .15);
+
+    &__side {
+      height: auto;
+      transition: .8s;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    &:hover &__side {
+      &--front {
+        transform: rotateY(0);
+      }
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
   }
 }
