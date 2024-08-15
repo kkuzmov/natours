@@ -55,3 +55,25 @@
     }
   }
 }
+
+@include break(tablet) {
+  .story {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+}
+
+@include break(phone) {
+  .story {
+    transform: skew(0);
+
+    &__shape {
+      transform: translate(-3rem) skew(0);
+    }
+
+    &__text {
+      transform: skew(0);
+    }
+  }
+}
