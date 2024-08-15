@@ -41,3 +41,8 @@ button {
   outline: none;
   cursor: pointer;
 }
+
+::selection {
+  background-color: $mediumGreen;
+  color: $colorWhite;
+}
