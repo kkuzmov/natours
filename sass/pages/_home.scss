@@ -69,6 +69,7 @@
   .book {
     background-image: linear-gradient(120deg, rgba($colorWhite, .9) 0%, rgba($colorWhite, .8) 65%, transparent 65%), url('../img/nat-10.jpg');
     background-size: cover;
+
     &__form {
       width: 70%;
     }
@@ -79,8 +80,10 @@
   .book {
     background-image: linear-gradient(to right, rgba($colorWhite, .9) 0%, rgba($colorWhite, .8) 100%), url('../img/nat-10.jpg');
     background-size: cover;
+
     &__form {
       width: 100%;
+      padding: 5rem;
     }
   }
 }

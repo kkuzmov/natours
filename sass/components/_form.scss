@@ -97,3 +97,29 @@
       
   }
 }
+
+@include break(tablet) {
+  .form {
+    &__radio-group {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    &__input {
+      width: 100%;
+    }
+
+    &__radio-btn {
+      &::after {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &__group {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
