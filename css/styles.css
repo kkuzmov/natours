@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -286,7 +287,8 @@ body {
     background-color: #fff; }
 
 .btn-text:link, .btn-text:visited {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 500;
   color: #0396ff;
   display: inline-block;
   text-decoration: none;
@@ -501,11 +503,11 @@ body {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 3px;
-  padding: 6rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 33px;
+  padding: 6rem 7rem;
   font-size: 10px;
-  transform: skew(-12deg); }
+  transform: skew(12deg); }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -513,14 +515,29 @@ body {
     clip-path: circle(50% at 50% 50%);
     overflow: hidden;
     position: relative;
-    transform: translate(-3rem, -3rem) skewX(12deg); }
+    transform: translate(-3rem, -3rem) skewX(-12deg); }
   .story__img {
     height: 100%;
     transform: translateY(-2rem) scale(1.4);
     backface-visibility: hidden;
     transition: all 0.5s; }
   .story__text {
-    transform: skew(12deg); }
+    transform: skew(-12deg);
+    position: relative; }
+    .story__text::before {
+      content: '“';
+      font-size: 75px;
+      position: absolute;
+      top: -65px;
+      opacity: 0.7;
+      left: 120px; }
+    .story__text::after {
+      content: '”';
+      font-size: 75px;
+      position: absolute;
+      right: -25px;
+      opacity: 0.7;
+      bottom: -90px; }
   .story__caption {
     position: absolute;
     left: 50%;
