@@ -36,11 +36,11 @@
     transition: all .4s;
   }
   &--white {
-    background-color: #fff;
+    background-color: $colorWhite;
     color: #777;
 
     &::after {
-      background-color: #fff;
+      background-color: $colorWhite;
     }
   }
   &--green {
@@ -48,12 +48,21 @@
     color: $colorWhite;
 
     &::after {
-      background-color: #fff;
+      background-color: $colorWhite;
     }
   }
   &--animated {
     animation: moveUpFromBottom 2s .75s;
     animation-fill-mode: backwards;
+  }
+
+  &--blue {
+    background-color: $colorBlue2;
+    color: $colorWhite;
+
+    &::after {
+      background-color: $colorWhite;
+    }
   }
 }
 
