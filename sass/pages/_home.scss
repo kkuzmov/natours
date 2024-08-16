@@ -10,7 +10,7 @@
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, $lightGreenOpacity8, $darkGreenOpacity8), url(../img/nat-4.jpg);
+  background-image: $gradient, url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem;
@@ -18,9 +18,8 @@
   &>* {
     transform: skewY(7deg);
   }
-
-  @include break(tablet) {
-    padding: 12rem 0;
+  @include break(tablet-land) {
+    padding: 12rem 2rem;
   }
 }
 

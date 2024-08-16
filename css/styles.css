@@ -90,8 +90,8 @@ body {
   .heading-primary--main {
     display: block;
     font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 2.5rem;
     animation: moveInLeft 1s; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
@@ -101,7 +101,7 @@ body {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1.74rem;
+    letter-spacing: 0.9rem;
     animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
@@ -172,15 +172,15 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(39, 180, 131, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(171, 220, 255, 0.8), rgba(3, 150, 255, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
   .section-features > * {
     transform: skewY(7deg); }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 75em) {
     .section-features {
-      padding: 12rem 0; } }
+      padding: 12rem 2rem; } }
 
 .section-tours {
   background-color: #f7f7f7;
@@ -507,10 +507,10 @@ body {
     clip-path: circle(50% at 50% 50%);
     overflow: hidden;
     position: relative;
-    transform: translateX(-3rem) skewX(12deg); }
+    transform: translate(-3rem, -3rem) skewX(12deg); }
   .story__img {
     height: 100%;
-    transform: translateY(-4rem) scale(1.4);
+    transform: translateY(-2rem) scale(1.4);
     backface-visibility: hidden;
     transition: all 0.5s; }
   .story__text {
@@ -536,7 +536,9 @@ body {
   .story {
     width: 100%;
     padding: 4rem;
-    padding-left: 7rem; } }
+    padding-left: 7rem; }
+    .story__shape {
+      transform: translate(-3rem, -1rem) skewX(12deg); } }
 
 @media only screen and (max-width: 37.5em) {
   .story {
@@ -734,7 +736,7 @@ body {
 
 .header {
   height: 75vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(39, 180, 131, 0.8)), url(../img/hero-small.jpg);
+  background-image: linear-gradient(to right bottom, rgba(171, 220, 255, 0.8), rgba(3, 150, 255, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -759,7 +761,7 @@ body {
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
   .header {
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(39, 180, 131, 0.8)), url(../img/hero.jpg); } }
+    background-image: linear-gradient(to right bottom, rgba(171, 220, 255, 0.8), rgba(3, 150, 255, 0.8)), url(../img/hero.jpg); } }
 
 @media only screen and (max-width: 37.5em) {
   .header {
@@ -982,5 +984,5 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem)); }
   @media only screen and (max-width: 56.25em) {
     .row {
-      max-width: 50rem;
+      max-width: 55rem;
       padding: 0 3rem; } }

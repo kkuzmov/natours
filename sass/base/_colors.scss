@@ -18,6 +18,10 @@ $colorSecondaryDark: #ff7730;
 $colorTertiaryLight: #2998ff;
 $colorTertiaryDark: #5643fa;
 
+$colorBlue: rgb(171, 220, 255);
+$colorBlue2: #0396ffcc;
+
+$gradient: linear-gradient(to right bottom, $colorBlue, $colorBlue2);
 $gradient1: linear-gradient(to right bottom, #ffdb2f, #f4fd00);
 $gradient2: linear-gradient(to right bottom, #d9fa9e, #80fbae); 
 $gradient3: linear-gradient(to right bottom, #bff1ec, #6dc0ec);
