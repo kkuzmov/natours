@@ -23,7 +23,7 @@
       border-bottom: 3px solid $mediumGreen;
 
       &:invalid {
-        border-bottom: 3px solid $colorSecondaryDark;
+        border-bottom: 3px solid $colorRed;
       }
     }
 
@@ -64,7 +64,7 @@
   &__radio-btn {
     height: 3rem;
     width: 3rem;
-    border: 4px solid $mediumGreen;
+    border: 4px solid $colorBlue2;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
@@ -79,7 +79,7 @@
       height: 15px;
       width: 15px;
       border-radius: 50%;
-      background-color: $mediumGreen;
+      background-color: $colorBlue2;
       opacity: 0;
       transition: opacity .2s;
     }
