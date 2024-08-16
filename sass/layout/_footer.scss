@@ -35,7 +35,6 @@
 
   &__item {
     display: inline-block;
-
     &:not(:last-child) {
       margin-right: 1.5rem;
     }
@@ -45,7 +44,7 @@
 
     &:link,
     &:visited {
-      color: $colorWhite2;
+      color: $colorWhite;
       text-decoration: none;
       text-transform: uppercase;
       display: inline-block;
@@ -81,7 +80,19 @@
     }
   }
 
-  @include break(tablet) {
+  
+
+  
+}
+
+@include break(tablet) {
+  .footer {
     padding: 8rem 0;
+
+    &__item {
+      font-size: 1.8rem;
+    }
   }
+
+
 }
