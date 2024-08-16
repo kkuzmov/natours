@@ -50,13 +50,11 @@
       text-transform: uppercase;
       display: inline-block;
       transition: all .2s;
-      // background-color: $colorTertiaryGrey;
-
     }
 
     &:active,
     &:hover {
-      color: $mediumGreen;
+      color: $colorBlue;
       box-shadow: 0 1rem 2rem rgba($colorBlack, 0.4);
       transform: skewY(-2deg) scale(1.15);
     }

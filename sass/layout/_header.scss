@@ -5,9 +5,19 @@
   background-position: right 70%;
   position: relative;
 
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+  }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 81% 115vh, 0 100%);
+    height: 135vh;
   }
 
   &__logo-box {
@@ -34,11 +44,11 @@
     text-align: center;
   }
 
-  
+
 }
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-       (min-width: 125em) {
+(min-width: 125em) {
   .header {
     background-image: $gradient, url('../img/header-bg.webp');
   }
@@ -47,7 +57,7 @@
 @include break(phone) {
   .header {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    background-position: 60% 70%;
-    
+    background-position: 90% 70%;
+
   }
 }
