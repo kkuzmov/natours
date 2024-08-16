@@ -44,7 +44,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, $lightGreen, $darkGreen);
+  background-image: $gradient;
   display: inline-block;
   -webkit-background-clip: text;
   background-clip: text;
@@ -61,7 +61,7 @@ body {
   }
 
   &:hover {
-    transform: skewY(-2deg) scale(1.15);
+    transform: scale(1.15);
     text-shadow: .5rem 1rem 2rem grey;
   }
 }

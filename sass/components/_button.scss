@@ -60,15 +60,15 @@
 .btn-text {
   &:link, &:visited {
     font-size: $default-font-size;
-    color: $mediumGreen;
+    color: $colorBlue3;
     display: inline-block;
     text-decoration: none;
-    border-bottom: 1px solid $mediumGreen;
+    border-bottom: 1px solid $colorBlue3;
     padding: 3px;
   }
 
   &:hover {
-    background-color: $mediumGreen;
+    background-color: $colorBlue3;
     color: $colorWhite;
     box-shadow: 0 1rem 2rem rgba($colorBlack, .15);
     transform: translateY(-3px);
