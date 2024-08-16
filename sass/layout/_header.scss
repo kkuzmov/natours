@@ -1,6 +1,6 @@
 .header {
   height: 75vh;
-  background-image: $gradient, url('../img/header-bg-2.webp');
+  background-image: $gradient, url('../img/header-bg-3.webp');
   background-size: cover;
   background-position: 30% 77%;
   position: relative;
@@ -50,7 +50,7 @@
 @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
 (min-width: 125em) {
   .header {
-    background-image: $gradient, url('../img/header-bg-2.webp');
+    background-image: $gradient, url('../img/header-bg-3.webp');
   }
 }
 
