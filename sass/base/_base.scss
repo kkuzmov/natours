@@ -24,7 +24,7 @@ html {
 }
 body {
   box-sizing: border-box;
-  padding: 3rem;
+  padding: 1rem;
 
   @include break(tablet) {
     padding: 0rem;
@@ -43,6 +43,6 @@ button {
 }
 
 ::selection {
-  background-color: $mediumGreen;
+  background-color: $colorBlue;
   color: $colorWhite;
 }
